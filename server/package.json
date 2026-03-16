@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config src/server.js",
+    "seed-movies": "node -r dotenv/config src/seeds/seedMovies.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "form-data": "^4.0.5",
+    "jsonwebtoken": "^9.0.3",
+    "mailgun.js": "^12.7.1",
+    "mongoose": "^9.2.1",
+    "stripe": "^20.4.1"
+  }
+}
