@@ -36,7 +36,7 @@ router.post('/', async (req, res) => {
             bookingId,
             paymentId: payment._id.toString(),
         },
-        return_url: `http://localhost:5173/payments/return?session_id={CHECKOUT_SESSION_ID}`,
+        return_url: `${process.env.FRONTEND_BASE_URL}/payments/return?session_id={CHECKOUT_SESSION_ID}`,
     });
 
     res.json(
