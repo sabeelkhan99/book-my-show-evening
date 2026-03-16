@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:3000'
+const BASE_URL = import.meta.env.VITE_BACKEND_BASE_URL;
 
 export async function fetchMovies() {
     const res = await axios.get(`${BASE_URL}/api/v1/movies`);
